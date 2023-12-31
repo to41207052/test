@@ -1,0 +1,29 @@
+body{
+    background: #fdb958;
+}
+
+.box{
+  /* 基本的なスタイルと配置 */
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:100px;
+  
+  width:150px;
+  height:150px;
+    /* 基本的なスタイルと配置 */
+  /* ニューモーフィズムのスタイル */
+  background: #fdb958;
+  
+box-shadow:  20px 20px 60px #eeae53,
+-20px -20px 60px #ffc45d;
+   /* ニューモーフィズムのスタイル */
+    font-family: 'DotGothic16', sans-serif;
+    text-align: center;
+
+}
+
+
+
+
+
