@@ -1,31 +1,28 @@
-// オブジェクトのキーを取得する
-
-export interface FormValues {
-    last_name: string | null;
-    first_name: string | null;
-    gender: number | null;
-    birthday: string | null;
+function randomRoto(x:number){
+    switch(x){
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+        case 5:
+        case 6:
+        case 7:
+        case 8:
+        case 9:
+            console.log(`${x}:一桁ですね！`);
+            break;
+        case 11:
+        case 22:
+        case 33:
+        case 44:
+        case 55:
+            console.log(`${x}:キリ番ですね！`);
+            break;
+        default:
+            console.log(`${x}ハズレ`)
+            break;
+    }
 }
 
-const setValue = <K extends keyof FormValues>(
-    obj: FormValues, // オブジェクトを引数として追加
-    val: FormValues[K],
-    key: K,
-) => {
-    obj[key] = val; // 修正: 関数の引数で渡されたオブジェクトに対して値を設定
-};
-
-// 使用例
-const example: FormValues = {
-    last_name: "Smith",
-    first_name: "John",
-    gender: 1,
-    birthday: "1990-01-01",
-};
-
-setValue(example, "Doe", "last_name");
-setValue(example, 2, "gender");
-
-console.log(example);
-console.log("FEATURE")
-  // 例: { last_name: 'Doe', first_name: 'John', gender: 2, birthday: '1990-01-01' }
+let a = Math.floor(Math.random()*60)
+randomRoto(a);
