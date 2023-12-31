@@ -26,4 +26,5 @@ const example: FormValues = {
 setValue(example, "Doe", "last_name");
 setValue(example, 2, "gender");
 
-console.log(example);  // 例: { last_name: 'Doe', first_name: 'John', gender: 2, birthday: '1990-01-01' }
+console.log(example);
+  // 例: { last_name: 'Doe', first_name: 'John', gender: 2, birthday: '1990-01-01' }
