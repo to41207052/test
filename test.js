@@ -25,3 +25,4 @@ function randomRoto(x) {
 }
 var a = Math.floor(Math.random() * 60);
 randomRoto(a);
+console.log(a);
